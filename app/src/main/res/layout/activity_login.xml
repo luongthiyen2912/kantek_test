@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_16dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.component.login.LoginActivity">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_email"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_14sp"
+        android:inputType="textEmailAddress"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvErrorEmail"
+        android:textSize="@dimen/dimen_12sp"
+        android:textColor="@color/red"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:textSize="@dimen/dimen_14sp"
+        android:hint="@string/text_password"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvErrorPassword"
+        android:textSize="@dimen/dimen_12sp"
+        android:textColor="@color/red"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:id="@+id/btLogin"
+        android:text="@string/text_login"/>
+
+</LinearLayout>

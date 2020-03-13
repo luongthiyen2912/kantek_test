@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">coreservice</string>
+
+    <string name="err_connect_internet">Vui lòng kết nối internet</string>
+    <string name="err_invalid_token_msg">User không hợp lệ!</string>
+    <string name="err_try_again">Vui lòng thử lại!</string>
+
+    <string name="mess_loading">Đang tải...</string>
+</resources>

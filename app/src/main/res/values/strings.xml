@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="text_password">Mật khẩu</string>
+    <string name="text_login">Đăng nhập</string>
+     <string name="text_email">Email</string>
+    <string name="err_input_email">Vui lòng nhập vào email</string>
+    <string name="err_input_password">Vui lòng nhập vào mật khẩu</string>
+    <string name="err_invalid_email">Email không hợp lệ</string>
+</resources>
