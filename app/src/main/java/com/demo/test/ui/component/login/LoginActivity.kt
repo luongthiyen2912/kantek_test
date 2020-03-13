@@ -87,12 +87,13 @@ class LoginActivity : BaseActivity() {
             }
             is Resource.Error ->
                 user.t?.let {
-                dismissProgressDialog()
-                if(it is NetworkErrorException) {
-                    loginViewModel.showToastMessage(R.string.err_connect_internet)
-                }else
-                loginViewModel.showToastMessage(R.string.err_try_again)
-            }
+                    dismissProgressDialog()
+                    if (it is NetworkErrorException) {
+                        loginViewModel.showToastMessage(R.string.err_connect_internet)
+                    } else {
+                        loginViewModel.showToastMessage(R.string.err_try_again)
+                    }
+                }
         }
 
     }

@@ -26,11 +26,11 @@ class RemoteRepository : BaseRepository, RemoteSource {
                 if (response.code == SUCCESS_CODE){
                     Resource.Success(data = response.data as User.UserRespond)
                 }else{
-                    Resource.Error(t = response as Throwable)
+                    Resource.Error(t = Throwable(), errorCode = response.code)
                 }
             }
             else -> {
-                Resource.Error(t = response as Throwable)
+                Resource.Error(t = response as Throwable, errorCode = -1)
 
             }
         }

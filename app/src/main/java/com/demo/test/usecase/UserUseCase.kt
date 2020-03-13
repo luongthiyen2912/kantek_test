@@ -27,7 +27,7 @@ constructor(
                 serviceResponse = dataRepository.login(email,password)
                 loginMutableLiveData.postValue(serviceResponse)
             } catch (e: Exception) {
-                loginMutableLiveData.postValue(Resource.Error(e))
+                loginMutableLiveData.postValue(Resource.Error(e,-1))
             }
         }
     }
